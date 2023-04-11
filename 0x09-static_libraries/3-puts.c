@@ -1,6 +1,21 @@
 #include "main.h"
+#include <stdio.h>
+
+/**
+ * _puts - writes a string to stdout
+ * @str: the string to write
+ */
 void _puts(char *str)
-#include<stdio.h>
+{
+	int i;
+
+	for (i = 0; str[i] != '\0'; i++)
+	{
+		putchar(str[i]);
+	}
+	putchar('\n');
+}
+
 /**
  * main - Entry point
  *
@@ -8,7 +23,6 @@ void _puts(char *str)
  */
 int main(void)
 {
-	puts("\"Programming is like building a multilingual puzzle");
+	_puts("\"Programming is like building a multilingual puzzle");
 	return (0);
 }
-
