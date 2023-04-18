@@ -3,10 +3,10 @@
 #include "dog.h"
 
 /**
- * print_pet - prints a struct dog
+ * print_dog - prints a struct dog
  * @p: struct dog to print
  */
-void print_pet(struct pet *p)
+void print_dog(struct dog *p)
 {
 	if (p == NULL)
 		return;
